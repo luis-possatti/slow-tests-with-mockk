@@ -5,5 +5,5 @@ import evaluatetestperformance.dependence.model.Dependence6Response
 
 class Dependence6Class {
 
-    fun getName(request: Dependence6Request): Dependence6Response = TODO()
+    fun getName(request: Dependence6Request): Dependence6Response = Dependence6Response(name6 = "${request.index6}")
 }
