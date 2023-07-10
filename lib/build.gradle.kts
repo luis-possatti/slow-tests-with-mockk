@@ -40,6 +40,10 @@ tasks.withType<Test> {
         events("passed", "skipped", "failed")
     }
 
+    systemProperty("kotest.framework.classpath.scanning.config.disable", true)
+    systemProperty("kotest.framework.config.fqn", "evaluatetestperformance.KotestProjectConfig")
+    systemProperty("kotest.framework.classpath.scanning.autoscan.disable", true)
+
     // always run tests
     outputs.upToDateWhen { false }
 
