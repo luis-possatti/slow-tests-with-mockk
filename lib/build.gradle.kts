@@ -9,7 +9,7 @@
 
 plugins {
     // Apply the org.jetbrains.kotlin.jvm Plugin to add support for Kotlin.
-    id("org.jetbrains.kotlin.jvm") version "1.8.10"
+    id("org.jetbrains.kotlin.jvm") version "1.6.0"
 
     // Apply the java-library plugin for API and implementation separation.
     `java-library`
@@ -21,8 +21,9 @@ repositories {
 }
 
 dependencies {
-    testImplementation("io.kotest:kotest-runner-junit5-jvm:5.6.2")
-    testImplementation("io.mockk:mockk:1.13.5")
+    testImplementation("io.kotest:kotest-runner-junit5-jvm:5.4.2")
+    testImplementation("io.mockk:mockk:1.12.3")
+    testImplementation("com.amazonaws:aws-java-sdk:1.12.504")
 }
 
 // Apply a specific Java toolchain to ease working on different environments.

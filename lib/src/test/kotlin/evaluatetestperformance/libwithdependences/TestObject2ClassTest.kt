@@ -8,6 +8,8 @@ import io.kotest.matchers.shouldBe
 import io.mockk.every
 import io.mockk.impl.annotations.InjectMockKs
 import io.mockk.impl.annotations.MockK
+import com.amazonaws.*
+
 /**
  *  SampleKotlinClassTest.
  */
